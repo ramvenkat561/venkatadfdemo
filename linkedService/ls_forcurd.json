@@ -1,0 +1,16 @@
+{
+	"name": "ls_forcurd",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=pothireddyserver.database.windows.net;initial catalog=pothireddyDB;user id=admin123",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1ZjMzNTAyOS04YTc1LTQ0MjgtYWQ1MC0xNzFmMDI4YmI0ZTYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

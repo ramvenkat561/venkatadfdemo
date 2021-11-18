@@ -1,0 +1,58 @@
+{
+	"name": "ds_sqlserver",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sqlserver",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "xserver_name",
+				"type": "varchar"
+			},
+			{
+				"name": "xdttm_ins",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "xdttm_last_ins_upd",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "xfallback_dbid",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "dbid",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "status",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "version",
+				"type": "smallint",
+				"precision": 5
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "spt_fallback_db"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,19 @@
+{
+	"name": "ds_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blobstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "adfdemo",
+				"container": "output1"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

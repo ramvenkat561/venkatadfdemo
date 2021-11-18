@@ -1,0 +1,44 @@
+{
+	"name": "ds_sinkalterrowdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sqldatabasecurd",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "empid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "gender",
+				"type": "varchar"
+			},
+			{
+				"name": "country",
+				"type": "varchar"
+			},
+			{
+				"name": "salary",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "department",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "emp123"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

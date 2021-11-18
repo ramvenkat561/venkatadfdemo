@@ -1,0 +1,45 @@
+{
+	"name": "pipeline18",
+	"properties": {
+		"activities": [
+			{
+				"name": "dataflow13",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "dataflow13",
+						"type": "DataFlowReference",
+						"parameters": {
+							"dept": {
+								"value": "'@{pipeline().parameters.depname}'",
+								"type": "Expression"
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"parameters": {
+			"depname": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-11-17T04:05:59Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

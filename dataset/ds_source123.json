@@ -1,0 +1,19 @@
+{
+	"name": "ds_source123",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_forazure",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data123.txt",
+				"container": "inputsource"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
