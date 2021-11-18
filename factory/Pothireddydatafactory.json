@@ -1,0 +1,9 @@
+{
+	"name": "Pothireddydatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "269dccc0-f9cd-4c2e-909b-262aa2bd7984",
+		"tenantId": "4cc58301-fc53-4784-847a-b637754cf6f7"
+	}
+}
